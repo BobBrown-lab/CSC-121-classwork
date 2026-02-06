@@ -1,0 +1,4 @@
+cars = ['pontiac','morris minor','toyota']
+print (f"My first car was a blue {cars[0].title()} with wood siding.")
+print (f"My second car was a gray {cars[1].title()} with a stick shift.")
+print (f"My current car is a hybrid black {cars[2].title()}.")
