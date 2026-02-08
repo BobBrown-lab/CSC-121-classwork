@@ -1,0 +1,12 @@
+guests = ["hedy","ludwig","jack","don"]
+guests.append("den")
+guests.insert(0,"tom")
+guests.insert(2,"bill")
+guests.sort()
+message = "Please come to dinner on Sunday at 6:00. I have a new big table."
+print (f"{guests[0].title()},\n{message}")
+print (f"{guests[1].title()},\n{message}")
+print (f"{guests[2].title()},\n{message}")
+print (f"{guests[4].title()},\n{message}")
+print (f"{guests[5].title()},\n{message}")
+print (f"{guests[6].title()},\n{message}")
