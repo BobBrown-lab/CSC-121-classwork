@@ -1,0 +1,3 @@
+animals = ['fox', 'dog', 'ferret']
+for animal in animals:
+    print(animal)
