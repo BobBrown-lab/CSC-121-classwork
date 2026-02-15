@@ -1,3 +1,5 @@
 animals = ['fox', 'dog', 'ferret']
-for animal in animals:
-    print(animal)
+print(f"A {animals[0]} is cute, but it is nocturnal.")
+print(f"A {animals[1]} is pet royalty, but vets are expensive.")
+print(f"A {animals[2]} is dangerous in its weight class.")
+print ("\nIf you can afford a vet, get a dog.")
