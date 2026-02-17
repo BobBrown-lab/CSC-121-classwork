@@ -1,0 +1,14 @@
+guests = ["hedy","ludwig","jack","don"]
+guests.append("den")
+guests.insert(0,"tom")
+guests.insert(2,"bill")
+guests.sort()
+
+print ("The first three items on the list are:")
+print (f"{guests[0].title()},{guests[1].title()},{guests[2].title()}")
+
+print ("\nThree items from the middle of the the list are:")
+print (f"{guests[2].title()},{guests[3].title()},{guests[4].title()}")
+
+print("\nThe last three items on the list are:")
+print (f"{guests[4].title()},{guests[5].title()},{guests[6].title()}")
