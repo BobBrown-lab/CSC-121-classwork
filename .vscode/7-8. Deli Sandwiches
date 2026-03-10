@@ -1,6 +1,10 @@
 #create sandwich list
 sandwich_orders = ["Cuban", "BLT", "egg"]
-finished_sandwiches = []
-for sandwich in sandwich_orders:
 
-    print (f"I finished your "sandwich_orders[0])
+finished_sandwiches = []
+ 
+for sandwich_order in sandwich_orders:
+    print (f"I finished your",(sandwich_order),"sandwich")
+    finished_sandwiches.append(sandwich_order)
+
+print("\n",finished_sandwiches)
