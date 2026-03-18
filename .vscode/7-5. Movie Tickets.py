@@ -1,6 +1,6 @@
-# Get number of tickets
 num_tickets = int(input("How many tickets do you want to buy? "))
-
+print("\n")
+#num_tickets = 5
 #get ages of ticket holders
 ages = []
 for age in range(num_tickets):
@@ -18,4 +18,6 @@ for age in ages:
         subtot += 15
 
 #total = subtotal
+print("\n")
+
 print(f"The total cost of your tickets is ${subtot}.")
