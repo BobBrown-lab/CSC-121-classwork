@@ -21,21 +21,6 @@ class User:
 
 user = User('bob', 'brown', 'm')
 
-        
-"""call increment 3 times"""
-user.increment_login_attempts
-user.increment_login_attempts
-user.increment_login_attempts
-
-"""print login attempts"""
-print(f"Login attempts: {user.login_attempts}")
-
-"""Reset and print login attempts"""
-user.reset_login_attempts()
-print(f"After reset: {user.login_attempts}")
-
-     
-
 print (
     f"\n{user.first_name.title()}"
     f" {user.last_name.title()}"
@@ -43,5 +28,17 @@ print (
      "\n"
     )
     
+"""call increment 3 times"""
+user.increment_login_attempts()
+user.increment_login_attempts()
+user.increment_login_attempts()
+
+"""print login attempts"""
+print(f"Login attempts: {user.login_attempts}")
+
+"""Reset and print login attempts"""
+user.reset_login_attempts()
+print(f"After reset: {user.login_attempts}")
+print("\n")
 
  
