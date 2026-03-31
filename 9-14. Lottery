@@ -20,11 +20,13 @@ while x <= 9:
 print(winning_numbers) 
 
 #generate winning letters list
+winning_letters =[]
 
 alphabet = string.ascii_lowercase
 x=0
 while x<= 3:
     y = random.choice(alphabet)
-    winning_numbers.append(y)
+    winning_letters.append(y)
     x += 1
-print(winning_numbers)
+print(winning_letters)
+print("\n")
