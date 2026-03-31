@@ -40,5 +40,3 @@ print(f"Login attempts: {user.login_attempts}")
 user.reset_login_attempts()
 print(f"After reset: {user.login_attempts}")
 print("\n")
-
- 

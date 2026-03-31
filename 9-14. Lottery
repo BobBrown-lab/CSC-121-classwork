@@ -1,0 +1,30 @@
+#9-14. Lottery
+
+#import functions from library
+import random
+from random import randint
+import string
+from random import choice
+
+
+#create list for winning numbers:
+
+winning_numbers = []
+
+#generate winning numbers list
+x=0
+while x <= 9:
+    y = randint(1,11)
+    winning_numbers.append(y)
+    x +=1
+print(winning_numbers) 
+
+#generate winning letters list
+
+alphabet = string.ascii_lowercase
+x=0
+while x<= 3:
+    y = random.choice(alphabet)
+    winning_numbers.append(y)
+    x += 1
+print(winning_numbers)
