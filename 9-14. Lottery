@@ -6,11 +6,9 @@ from random import randint
 import string
 from random import choice
 
-
 #create list for winning numbers:
 
 winning_numbers = []
-
 #generate winning numbers list
 x=0
 while x <= 9:
@@ -20,8 +18,8 @@ while x <= 9:
 print(winning_numbers) 
 
 #generate winning letters list
-winning_letters =[]
 
+winning_letters =[]
 alphabet = string.ascii_lowercase
 x=0
 while x<= 3:
@@ -30,3 +28,15 @@ while x<= 3:
     x += 1
 print(winning_letters)
 print("\n")
+
+#generate winning_ticket
+x=0
+winning_ticket = []
+while x <= 3:
+    a = choice(winning_numbers)
+    winning_ticket.append(a)
+    x += 1
+print(winning_ticket)
+b = choice(winning_letters)
+winning_ticket.append(b)
+print(winning_ticket)
