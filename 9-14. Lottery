@@ -7,7 +7,6 @@ import string
 from random import choice
 
 #create list for winning numbers:
-
 winning_numbers = []
 #generate winning numbers list
 x=0
@@ -15,10 +14,8 @@ while x <= 9:
     y = randint(1,11)
     winning_numbers.append(y)
     x +=1
-print(winning_numbers) 
 
 #generate winning letters list
-
 winning_letters =[]
 alphabet = string.ascii_lowercase
 x=0
@@ -26,17 +23,26 @@ while x<= 3:
     y = random.choice(alphabet)
     winning_letters.append(y)
     x += 1
-print(winning_letters)
-print("\n")
 
 #generate winning_ticket
 x=0
 winning_ticket = []
 while x <= 3:
-    a = choice(winning_numbers)
+    a = random.choice(winning_numbers)
     winning_ticket.append(a)
     x += 1
-print(winning_ticket)
-b = choice(winning_letters)
+b = random.choice(winning_letters)
 winning_ticket.append(b)
-print(winning_ticket)
+
+#create user ticket
+ticket = "Enter 4 numbers and 1 letter"
+ticket_numbers = [random.choice(winning_numbers) for _ in range(4)]
+ticket_letter = random.choice(winning_letters)
+user_ticket = ticket_numbers + [ticket_letter]
+
+# compare winning ticket and user ticket
+if set(winning_ticket).issubset(user_ticket):
+    print ("You win")
+else:
+    print("Not a winner this time")
+print("\n")    
