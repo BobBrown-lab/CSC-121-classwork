@@ -1,0 +1,11 @@
+#discussion chap 9
+
+class Blanket: 
+    """describe blanket"""
+
+    def __init__(self, size, origin, image, electric = False):
+        self.size = size #string
+        self.origin = origin #string
+        self.image = image.jpg #.jpg image
+        self.electric = electric #boolean
+       

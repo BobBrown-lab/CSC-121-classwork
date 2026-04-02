@@ -1,5 +1,4 @@
 #9-14. Lottery
-
 #import functions from library
 import random
 from random import randint
