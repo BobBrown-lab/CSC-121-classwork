@@ -1,0 +1,13 @@
+#10-4. GuestBook
+"""Enter a name and save it to a guestbook."""
+
+from pathlib import Path
+path = Path('guestbook.txt')
+while True:
+    name = input("Please enter your name, or 'q' to leave the program: ")
+    if name == 'q':
+        break
+    print(f"Welcome, {name.title()}!")
+    with path.open('a') as file:
+       file.write(f"{name.title()}\n")
+
