@@ -4,10 +4,10 @@ from name_function import get_formatted_name
 
 print("enter 'q' at any time to quit")
 while True:
-    first = input("\nPlease enter your first name")
+    first = input("\nPlease enter your first name: ")
     if first == 'q':
         break
-    last = input("\nPlease enter your last name")
+    last = input("\nPlease enter your last name: ")
     if last == 'q':
         break
 

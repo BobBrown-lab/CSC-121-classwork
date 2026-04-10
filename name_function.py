@@ -1,4 +1,4 @@
-#name_fuction
+#name_function
 
 def get_formatted_name(first,last):
     full_name = f"({first} {last})"
