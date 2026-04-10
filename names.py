@@ -1,6 +1,6 @@
 #names.py
 
-from name_function.py import get_formatted_name
+from name_function import get_formatted_name
 
 print("enter 'q' at any time to quit")
 while True:
