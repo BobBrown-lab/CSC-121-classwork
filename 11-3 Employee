@@ -1,0 +1,15 @@
+
+class Employee:
+
+    """model an employee"""
+    def __init___(self, first_name, last_name, salary=0):
+
+        self.first_name = first_name
+        self.last_name = last_name
+        self.salary = salary
+
+        def give_raise():
+            while True:
+
+
+
