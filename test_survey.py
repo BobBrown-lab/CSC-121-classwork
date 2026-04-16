@@ -8,7 +8,7 @@ def test_store_single_response():
     language_survey.store_response('English')
     assert 'English' in language_survey.responses
 
-def store_three_responses():
+def test_store_three_responses():
     """test for three stored reponses"""
     question = "What language did you first learn to speak?"
     language_survey = AnonymousSurvey(question)
