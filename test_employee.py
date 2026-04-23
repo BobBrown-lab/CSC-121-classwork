@@ -1,5 +1,8 @@
 
+import pytest
 from employee import Employee
+
+@pytest.fixture
 
 def test_give_default_raise():
     """test for default 5_000 raise"""
