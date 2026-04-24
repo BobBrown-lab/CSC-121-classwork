@@ -18,4 +18,4 @@ def test_give_default_raise(default_employee):
 def test_give_custom_raise(custom_employee):
     """test for custom 6_000 raise"""
     custom_employee.give_raise(6000)
-    assert emp.salary == 41000
+    assert custom_employee.salary == 41000
